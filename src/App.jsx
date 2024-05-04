@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import "./scss/custom.scss"
 import AddingFloor from './components/AddingFloor';
 import { v4 as uuidv4 } from 'uuid';
