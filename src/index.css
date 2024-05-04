@@ -1,0 +1,25 @@
+body {
+  background: #CFCFCF;
+}
+
+.btn-primary {
+    color: white;
+}
+
+.btn-primary:hover {
+    color: white;
+}
+
+.btn-outline-primary :hover{
+    color:white;
+}
+
+div:hover > .btn-outline-primary {
+    color:white;
+}
+
+.pintura-editor {
+    --color-background: 248, 249, 250;
+}
+
+
