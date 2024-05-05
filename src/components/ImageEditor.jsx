@@ -104,7 +104,7 @@ function ImageEditor({id, curImageUrl, setCurImageUrl, curImageState, updateImag
         src={curImageUrl} 
         onLoad={onImageLoad}
         imageCropAspectRatio={16/9}
-        imageBackgroundColor={"#F8F9FA"}
+        imageBackgroundColor={[248, 249, 250]}
         ref={editorRef}
       >
       </PinturaEditor>
