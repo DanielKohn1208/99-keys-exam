@@ -21,8 +21,8 @@ editorConfig.animations = 'never';
 
 function ImageEditor({id, curImageUrl, setCurImageUrl, curImageState, updateImageState}) {
 
+  const [forceRerender, setForceRerender] = useState(true)
   const editorRef = useRef(null);
-
   const onDrop = useCallback(acceptedFiles => {
     setCurImageUrl(URL.createObjectURL(acceptedFiles[0]));
   })
@@ -71,6 +71,7 @@ function ImageEditor({id, curImageUrl, setCurImageUrl, curImageState, updateImag
   function onImageLoad() {
     const { editor } = editorRef.current;
     editor.imageState = curImageState
+    setForceRerender(!forceRerender) // trick used to fix small bug with sizing
   }
 
   function removeImage() {
