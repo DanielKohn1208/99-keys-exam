@@ -40,9 +40,9 @@ function App() {
   return (<>
     <div className="container-lg pt-5 h-100 m-xs-0 p-xs-0" >
       <h2 className="fw-bold">99 Keys Exam - Adding Floor Plans</h2>
-      <div className="flex-grow-0 d-flex m-xs-0 p-xs-0" style={{ height:"600px", minWidth:"900px", overflowX:"scroll" }}>
+      <div className="flex-grow-0 d-flex m-xs-0 p-xs-0" style={{ height:"600px", minWidth:"900px", overflowX:"auto" }}>
         <div style={{width:"200px"}} 
-          className="bg-light p-3 me-3 rounded-3 d-flex flex-shrink-0 flex-column overflow-scroll">
+          className="bg-light p-3 me-3 rounded-3 d-flex flex-shrink-0 flex-column overflow-auto">
           {Object.keys(floorPlans).map((key) =>{
             return <div key={key}>
               {floorPlans[key].modedImage != null && 
